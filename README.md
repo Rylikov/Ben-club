@@ -1,3 +1,4 @@
 # Ben-club
 
-Вёрстка лендинга ресторана Ben club, с использованием js плагина fullpage
+
+Layout of the Ben club restaurant landing page using the js fullpage plugin
