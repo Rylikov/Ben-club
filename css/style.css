@@ -1,0 +1,475 @@
+body {
+    background-color: #f1f2f2;
+    margin: 0;
+    font-family: "PFAgoraSansPro";
+   
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+   margin: 0 0 0 7%;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  
+}
+
+.adress {
+ margin: 0% 0 0 8%;
+ font-size: 16px;
+}
+
+
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  
+}
+
+.header_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 28%;
+  margin-left: 70%;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 12% 0 30% 8%;
+  
+}
+
+.phone_p {
+  font-size: 16px;
+}
+
+.fa-map-marker-alt {
+  color: darkgoldenrod;
+}
+
+.fa-facebook-f {
+  color: darkgoldenrod;
+}
+
+.fa-instagram {
+  color: darkgoldenrod;
+}
+
+.fa-phone-alt {
+  color: darkgoldenrod;
+}
+
+.top-menu {
+  position: relative; 
+  background: #f1f2f2;
+  margin: 2% 0 0 0;
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-top: 3px solid #575350;
+  border-bottom: 1px solid #575350;
+  margin-bottom: 2px;
+}
+.top-menu:after {
+  border-bottom: 3px solid #575350;
+  border-top: 1px solid #575350;
+  box-shadow: 0 2px 7px #ccc;
+  margin-top: 2px;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #777777;
+  transition: .3s linear;
+  position: relative;
+}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: darkgoldenrod;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.menu-main a:before {left: 5px;}
+.menu-main a:after {right: 5px;}
+.menu-main a.current:before,
+.menu-main a.current:after,
+.menu-main a:hover:before, 
+.menu-main a:hover:after {opacity: 1;}
+.menu-main a.current,
+.menu-main a:hover {color: darkgoldenrod;}
+
+@media (max-width: 500px) {
+  .menu-main li {display: block;}
+}
+
+.rest {
+  margin: 3% 0 0 0;
+  color: darkgoldenrod;
+}
+
+.myButton {
+	box-shadow: 0px 0px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffcc66 5%, #eb9b1a 100%);
+	background-color:#ffcc66;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #eb9b1a 5%, #ffcc66 100%);
+	background-color:#eb9b1a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.btn {
+  margin: 2% 0 0 0;
+}
+
+.bg {
+  background-image: url(../img/img.png);
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  
+}
+/* адаптивность фона */
+/* lg-размер (<=1199px) */
+@media screen and (max-width: 1600px) {
+  .bg {width: 100%; height: 250px; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .bg {width: 100%; height: 150px; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  and (max-height: 300px ) { 
+  .bg {width: 100%; height: 100px; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  and (max-height: 200px ) {
+  .bg {width: 250px; height: 100px; }/* CSS для ширины до 575px (включительно) */
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-deck {
+  margin: 4% 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* адаптивность карточек */
+@media screen and (max-width: 1600px) {
+  .card-deck {width: 100%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .card-deck {width: 100%;  }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  { 
+  .card-deck {width: 100%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)   {
+  .card-deck {width: 100%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+@media (max-width: 500px)   {
+  .card-deck {width: 100%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+@media screen and (max-width: 1600px) {
+  .card {width: 100%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .card {width: 80%;  }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  { 
+  .card {width: 70%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)   {
+  .card {width: 60%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+@media (max-width: 520px)   {
+  .card {width: 40%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+
+
+@media screen and (max-width: 1600px) {
+  .card-icon {width: 60%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .card-icon {width: 50%;  }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  { 
+  .card-icon {width: 30%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)   {
+  .card-icon {width: 10%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+@media (max-width: 520px)   {
+  .card-icon {width: 10%;  }/* CSS для ширины до 575px (включительно) */
+}
+
+
+/* 2 страница */
+
+.titles {
+  color: #8c5f28;
+  margin: 6% 0 0 0;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+hr {
+ height: 2px;
+ border: none;
+ color: black; /* Цвет линии для остальных браузеров */
+ background-color: black; /* Цвет линии для браузера Firefox и Opera */
+}
+
+.it1 {
+  font-style: normal;
+  font-weight: 700;
+  margin: 8% 0 0 0;
+  text-align: justify;
+}
+
+.shrimp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 0 10%;
+}
+
+@media screen and (max-width: 1600px) {
+  .shrimp {width: 58%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .shrimp {width: 45%; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  and (max-height: 300px ) { 
+  .shrimp {width: 45%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  and (max-height: 200px ) {
+  .shrimp {width: 60%; }/* CSS для ширины до 575px (включительно) */
+}
+
+@media (max-width: 450px)  and (max-height: 200px ) {
+  .shrimp {width: 60%; }/* CSS для ширины до 575px (включительно) */
+}
+
+.pic {
+  margin: 3% 0 0 0;
+
+}
+
+@media screen and (max-width: 1600px) {
+  .pic {width: 450px; height: 250px; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .pic {width: 350px; height: 200px; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  and (max-height: 300px ) { 
+  .pic {width: 200px; height: 180px; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  and (max-height: 200px ) {
+  .pic {width: 100px; height: 150px; }/* CSS для ширины до 575px (включительно) */
+}
+
+.inter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1600px) {
+  .inter_pic {width: 20%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .inter_pic {width: 20%; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)  and (max-height: 300px ) { 
+  .inter_pic {width: 10%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  and (max-height: 200px ) {
+  .inter_pic {width: 10%; }/* CSS для ширины до 575px (включительно) */
+}
+
+@media screen and (max-width: 1600px) {
+  .inter_pic {width: 20%; }/* CSS для ширины от 992px до 1199px */
+}
+ 
+/* адаптиность схемы */
+
+@media screen and (max-width: 1600px) {
+  .plan {width: 100%; }/* CSS для ширины от 992px до 1199px */
+}
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .plan {width: 80%; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)   { 
+  .plan {width: 60%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  {
+  .plan {width: 50%; }/* CSS для ширины до 575px (включительно) */
+}
+
+/* Адаптивность слайдов */
+@media screen and (max-width: 1600px) {
+  .sl_slide {width: 100%; }/* CSS для ширины от 992px до 1199px */
+}
+/* md-размер (<=991px) */
+@media  screen and (max-width: 991px)  {
+  .sl_slide {width: 60%; }/* CSS для ширины от 768px до 991px */
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px)   { 
+  .sl_slide {width: 30%; }/* CSS для ширины от 576px до 767px */
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px)  {
+  .sl_slide {width: 10%; }/* CSS для ширины до 575px (включительно) */
+}
+
+.form-group {
+  margin: 0 0 0 25%;
+}
+
+.custom-select {
+  margin: 4% 0 0 0;
+}
+
+.btn-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4% 0 0 25%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.foot-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.foot-tel {
+  font-size: x-large;
+}
